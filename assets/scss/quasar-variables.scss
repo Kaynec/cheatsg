@@ -1,0 +1,141 @@
+$generic-border-radius: 10px !default;
+$background-dark: #121212;
+$background-light-page: #eaf4f4;
+$background-primary: #1c1c1c;
+$background-secondary: rgba(255, 255, 255, 0.03);
+
+.body--light {
+  background-color: $background-light-page;
+}
+
+.body--dark {
+  background: $background-dark;
+}
+
+$colors-light: (
+  text-primary: #1d1d1d,
+  // Dark gray for primary text on light background
+  text-secondary: hsla(0, 0%, 0%, 0.725),
+  // Light gray for secondary text on light background
+  text-light: #666666,
+  // Medium gray for additional text
+  primary: #007aff,
+  // Blue for primary elements
+  primary-light: hsla(211, 100%, 50%, 0.15),
+  // Light blue for highlights
+  primary-alternate: #71b5ff,
+  // Alternate blue for variation
+  secondary: #26a69a,
+  // Teal for secondary elements
+  btn-gradient: linear-gradient(to right, #007aff, #034da4),
+  // Blue gradient for buttons
+  btn-gradient-game: linear-gradient(to right, #007bff6e, #034ea459),
+  // Game-themed button gradient
+  accent: #db162f,
+  // Red for accent elements
+  accent-alternative: #db162f,
+  // Alternative red accent
+  dark: #ffffff,
+  // White background color
+  positive: #21ba45,
+  // Green for positive elements
+  negative: #db162f,
+  // Red for negative elements
+  info: #31ccec,
+  // Light blue for informational elements
+  warning: #f2c037,
+  // Yellow for warning messages
+  background-light: #f5f5f5,
+  // Light gray background color
+  background-dark: #ffffff,
+  // White background color
+  background-primary: #f7f0f0,
+  background-primary-light: #f7f0f0c7,
+  // Light gray primary background color
+  background-secondary: rgba(0, 0, 0, 0.08),
+  // Transparent secondary background color
+  overlay: hsla(0, 0%, 78%, 0.361),
+  // Light gray overlay color
+  overlay-card: hsla(0, 0%, 78%, 0.95),
+  // Dark gray overlay color for cards
+  border-primary: hsl(0, 0%, 85%),
+  // Light gray border color for primary elements
+  border-secondary: hsla(211, 100%, 50%, 0.302),
+  // Teal border color for secondary elements
+  text-price: #05cd99 // Greenish-blue color for price text,
+);
+
+$colors-dark: (
+  text-primary: #fff,
+  text-secondary: hsla(0, 0%, 100%, 0.725),
+  text-light: #bfbfbf,
+  primary: #007aff,
+  primary-light: hsla(211, 100%, 50%, 0.15),
+  primary-alternate: #71b5ff,
+  secondary: #26a69a,
+  btn-gradient: linear-gradient(to right, #007aff, #034da4),
+  btn-gradient-game: linear-gradient(to right, #007bff6e, #034ea459),
+  accent: #db162f,
+  accent-alternative: #db162f,
+  dark: #1d1d1d,
+  positive: #21ba45,
+  negative: #db162f,
+  info: #31ccec,
+  warning: #f2c037,
+  background-light: #eaf4f4,
+  background-dark: #121212,
+  background-primary: #1c1c1c,
+  background-primary-light: #1c1c1cc5,
+  background-secondary: rgba(255, 255, 255, 0.03),
+  overlay: hsla(0, 0%, 22%, 0.361),
+  overlay-card: hsla(0, 0%, 22%, 0.95),
+  border-primary: hsl(0, 0%, 15%),
+  border-secondary: hsla(211, 100%, 50%, 0.302),
+  text-price: #05cd99,
+);
+
+@each $name, $color in $colors-light {
+  :root {
+    --q-#{$name}: #{$color};
+  }
+  .body--light {
+    .bg-#{$name} {
+      background: $color;
+    }
+    .text-#{$name} {
+      color: $color;
+    }
+    .fill-#{$name} {
+      fill: $color;
+    }
+    .stroke-#{$name} {
+      stroke: $color;
+    }
+    .border-#{$name} {
+      border-color: $color;
+    }
+  }
+}
+
+@each $name, $color in $colors-dark {
+  :root {
+    --q-#{$name}: #{$color};
+  }
+  .body--dark {
+    .bg-#{$name} {
+      background: $color;
+    }
+    .text-#{$name} {
+      color: $color;
+    }
+    .fill-#{$name} {
+      fill: $color;
+    }
+    .stroke-#{$name} {
+      stroke: $color;
+    }
+    .border-#{$name} {
+      border-color: $color;
+    }
+  }
+}

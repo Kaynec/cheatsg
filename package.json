@@ -1,0 +1,60 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "purge": "node scripts/purge.js",
+    "dev": "nuxt dev --host",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "echo 'test'",
+    "lint": "echo 'lint'",
+    "codegen": "orval --config ./orval.config.ts"
+  },
+  "dependencies": {
+    "@happy-dom/global-registrator": "^9.20.3",
+    "@nuxt/image": "^1.1.0",
+    "@nuxtjs/robots": "^3.0.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@quasar/extras": "^1.16.9",
+    "@vueuse/core": "^9.5.0",
+    "@vueuse/router": "^10.7.0",
+    "date-fns-jalali": "^3.0.6-0",
+    "h3-compression": "^0.3.2",
+    "pinia": "^2.1.7",
+    "quasar": "^2.7.1",
+    "sitemap": "^7.1.1",
+    "vue-toastification": "^2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@iconify-json/carbon": "^1.1.26",
+    "@iconify-json/ri": "^1.1.19",
+    "@nuxt/kit": "^3.11.2",
+    "@nuxtjs/critters": "^0.6.0",
+    "@nuxtjs/fontaine": "^0.4.1",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/web-vitals": "^0.2.6",
+    "@quasar/vite-plugin": "^1.2.3",
+    "@unhead/schema-org": "^1.9.12",
+    "@unocss/nuxt": "^0.58.0",
+    "nuxt": "^3.8.2",
+    "nuxt-quasar-ui": "^2.1.2",
+    "nuxt-schema-org": "^3.3.6",
+    "nuxt-simple-robots": "^4.0.0-rc.17",
+    "nuxt-svgo": "^3.7.0",
+    "nuxt-typed-router": "^3.5.0",
+    "orval": "^6.23.0",
+    "postcss-rtlcss": "^4.0.9",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "unocss": "^0.58.0",
+    "unocss-preset-fluid": "^0.1.6"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

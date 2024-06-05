@@ -1,0 +1,867 @@
+.body--light {
+  background-color: #eaf4f4;
+}
+
+.body--dark {
+  background: #121212;
+}
+
+:root {
+  --q-text-primary: #fff;
+}
+
+.body--light .bg-text-primary {
+  background: #fff;
+}
+.body--light .text-text-primary {
+  color: #fff;
+}
+.body--light .fill-text-primary {
+  fill: #fff;
+}
+.body--light .stroke-text-primary {
+  stroke: #fff;
+}
+.body--light .border-text-primary {
+  border-color: #fff;
+}
+
+:root {
+  --q-text-light: #bfbfbf;
+}
+
+.body--light .bg-text-light {
+  background: #bfbfbf;
+}
+.body--light .text-text-light {
+  color: #bfbfbf;
+}
+.body--light .fill-text-light {
+  fill: #bfbfbf;
+}
+.body--light .stroke-text-light {
+  stroke: #bfbfbf;
+}
+.body--light .border-text-light {
+  border-color: #bfbfbf;
+}
+
+:root {
+  --q-text-secondary: #000;
+}
+
+.body--light .bg-text-secondary {
+  background: #000;
+}
+.body--light .text-text-secondary {
+  color: #000;
+}
+.body--light .fill-text-secondary {
+  fill: #000;
+}
+.body--light .stroke-text-secondary {
+  stroke: #000;
+}
+.body--light .border-text-secondary {
+  border-color: #000;
+}
+
+:root {
+  --q-primary: yellow;
+}
+
+.body--light .bg-primary {
+  background: yellow;
+}
+.body--light .text-primary {
+  color: yellow;
+}
+.body--light .fill-primary {
+  fill: yellow;
+}
+.body--light .stroke-primary {
+  stroke: yellow;
+}
+.body--light .border-primary {
+  border-color: yellow;
+}
+
+:root {
+  --q-secondary: #26a69a;
+}
+
+.body--light .bg-secondary {
+  background: #26a69a;
+}
+.body--light .text-secondary {
+  color: #26a69a;
+}
+.body--light .fill-secondary {
+  fill: #26a69a;
+}
+.body--light .stroke-secondary {
+  stroke: #26a69a;
+}
+.body--light .border-secondary {
+  border-color: #26a69a;
+}
+
+:root {
+  --q-btn-gradient: linear-gradient(to right, #74ace7, #bbe888);
+}
+
+.body--light .bg-btn-gradient {
+  background: linear-gradient(to right, #74ace7, #bbe888);
+}
+.body--light .text-btn-gradient {
+  color: linear-gradient(to right, #74ace7, #bbe888);
+}
+.body--light .fill-btn-gradient {
+  fill: linear-gradient(to right, #74ace7, #bbe888);
+}
+.body--light .stroke-btn-gradient {
+  stroke: linear-gradient(to right, #74ace7, #bbe888);
+}
+.body--light .border-btn-gradient {
+  border-color: linear-gradient(to right, #74ace7, #bbe888);
+}
+
+:root {
+  --q-accent: #db162f;
+}
+
+.body--light .bg-accent {
+  background: #db162f;
+}
+.body--light .text-accent {
+  color: #db162f;
+}
+.body--light .fill-accent {
+  fill: #db162f;
+}
+.body--light .stroke-accent {
+  stroke: #db162f;
+}
+.body--light .border-accent {
+  border-color: #db162f;
+}
+
+:root {
+  --q-accent-alternative: #db162f;
+}
+
+.body--light .bg-accent-alternative {
+  background: #db162f;
+}
+.body--light .text-accent-alternative {
+  color: #db162f;
+}
+.body--light .fill-accent-alternative {
+  fill: #db162f;
+}
+.body--light .stroke-accent-alternative {
+  stroke: #db162f;
+}
+.body--light .border-accent-alternative {
+  border-color: #db162f;
+}
+
+:root {
+  --q-dark: #1d1d1d;
+}
+
+.body--light .bg-dark {
+  background: #1d1d1d;
+}
+.body--light .text-dark {
+  color: #1d1d1d;
+}
+.body--light .fill-dark {
+  fill: #1d1d1d;
+}
+.body--light .stroke-dark {
+  stroke: #1d1d1d;
+}
+.body--light .border-dark {
+  border-color: #1d1d1d;
+}
+
+:root {
+  --q-positive: #21ba45;
+}
+
+.body--light .bg-positive {
+  background: #21ba45;
+}
+.body--light .text-positive {
+  color: #21ba45;
+}
+.body--light .fill-positive {
+  fill: #21ba45;
+}
+.body--light .stroke-positive {
+  stroke: #21ba45;
+}
+.body--light .border-positive {
+  border-color: #21ba45;
+}
+
+:root {
+  --q-negative: #c10015;
+}
+
+.body--light .bg-negative {
+  background: #c10015;
+}
+.body--light .text-negative {
+  color: #c10015;
+}
+.body--light .fill-negative {
+  fill: #c10015;
+}
+.body--light .stroke-negative {
+  stroke: #c10015;
+}
+.body--light .border-negative {
+  border-color: #c10015;
+}
+
+:root {
+  --q-info: #31ccec;
+}
+
+.body--light .bg-info {
+  background: #31ccec;
+}
+.body--light .text-info {
+  color: #31ccec;
+}
+.body--light .fill-info {
+  fill: #31ccec;
+}
+.body--light .stroke-info {
+  stroke: #31ccec;
+}
+.body--light .border-info {
+  border-color: #31ccec;
+}
+
+:root {
+  --q-warning: #f2c037;
+}
+
+.body--light .bg-warning {
+  background: #f2c037;
+}
+.body--light .text-warning {
+  color: #f2c037;
+}
+.body--light .fill-warning {
+  fill: #f2c037;
+}
+.body--light .stroke-warning {
+  stroke: #f2c037;
+}
+.body--light .border-warning {
+  border-color: #f2c037;
+}
+
+:root {
+  --q-background-light: #eaf4f4;
+}
+
+.body--light .bg-background-light {
+  background: #eaf4f4;
+}
+.body--light .text-background-light {
+  color: #eaf4f4;
+}
+.body--light .fill-background-light {
+  fill: #eaf4f4;
+}
+.body--light .stroke-background-light {
+  stroke: #eaf4f4;
+}
+.body--light .border-background-light {
+  border-color: #eaf4f4;
+}
+
+:root {
+  --q-background-dark: #121212;
+}
+
+.body--light .bg-background-dark {
+  background: #121212;
+}
+.body--light .text-background-dark {
+  color: #121212;
+}
+.body--light .fill-background-dark {
+  fill: #121212;
+}
+.body--light .stroke-background-dark {
+  stroke: #121212;
+}
+.body--light .border-background-dark {
+  border-color: #121212;
+}
+
+:root {
+  --q-background-primary: #fff;
+}
+
+.body--light .bg-background-primary {
+  background: #fff;
+}
+.body--light .text-background-primary {
+  color: #fff;
+}
+.body--light .fill-background-primary {
+  fill: #fff;
+}
+.body--light .stroke-background-primary {
+  stroke: #fff;
+}
+.body--light .border-background-primary {
+  border-color: #fff;
+}
+
+:root {
+  --q-overlay: rgba(222, 222, 222, 0.35);
+}
+
+.body--light .bg-overlay {
+  background: rgba(222, 222, 222, 0.35);
+}
+.body--light .text-overlay {
+  color: rgba(222, 222, 222, 0.35);
+}
+.body--light .fill-overlay {
+  fill: rgba(222, 222, 222, 0.35);
+}
+.body--light .stroke-overlay {
+  stroke: rgba(222, 222, 222, 0.35);
+}
+.body--light .border-overlay {
+  border-color: rgba(222, 222, 222, 0.35);
+}
+
+:root {
+  --q-border-primary: #262626;
+}
+
+.body--light .bg-border-primary {
+  background: #262626;
+}
+.body--light .text-border-primary {
+  color: #262626;
+}
+.body--light .fill-border-primary {
+  fill: #262626;
+}
+.body--light .stroke-border-primary {
+  stroke: #262626;
+}
+.body--light .border-border-primary {
+  border-color: #262626;
+}
+
+:root {
+  --q-background-secondary: rgba(255, 255, 255, 0.03);
+}
+
+.body--light .bg-background-secondary {
+  background: rgba(255, 255, 255, 0.03);
+}
+.body--light .text-background-secondary {
+  color: rgba(255, 255, 255, 0.03);
+}
+.body--light .fill-background-secondary {
+  fill: rgba(255, 255, 255, 0.03);
+}
+.body--light .stroke-background-secondary {
+  stroke: rgba(255, 255, 255, 0.03);
+}
+.body--light .border-background-secondary {
+  border-color: rgba(255, 255, 255, 0.03);
+}
+
+:root {
+  --q-border-secondary: #007aff4d;
+}
+
+.body--light .bg-border-secondary {
+  background: #007aff4d;
+}
+.body--light .text-border-secondary {
+  color: #007aff4d;
+}
+.body--light .fill-border-secondary {
+  fill: #007aff4d;
+}
+.body--light .stroke-border-secondary {
+  stroke: #007aff4d;
+}
+.body--light .border-border-secondary {
+  border-color: #007aff4d;
+}
+
+:root {
+  --q-text-price: #05cd99;
+}
+
+.body--light .bg-text-price {
+  background: #05cd99;
+}
+.body--light .text-text-price {
+  color: #05cd99;
+}
+.body--light .fill-text-price {
+  fill: #05cd99;
+}
+.body--light .stroke-text-price {
+  stroke: #05cd99;
+}
+.body--light .border-text-price {
+  border-color: #05cd99;
+}
+
+:root {
+  --q-text-primary: #fff;
+}
+
+.body--dark .bg-text-primary {
+  background: #fff;
+}
+.body--dark .text-text-primary {
+  color: #fff;
+}
+.body--dark .fill-text-primary {
+  fill: #fff;
+}
+.body--dark .stroke-text-primary {
+  stroke: #fff;
+}
+.body--dark .border-text-primary {
+  border-color: #fff;
+}
+
+:root {
+  --q-text-secondary: rgba(255, 255, 255, 0.725);
+}
+
+.body--dark .bg-text-secondary {
+  background: rgba(255, 255, 255, 0.725);
+}
+.body--dark .text-text-secondary {
+  color: rgba(255, 255, 255, 0.725);
+}
+.body--dark .fill-text-secondary {
+  fill: rgba(255, 255, 255, 0.725);
+}
+.body--dark .stroke-text-secondary {
+  stroke: rgba(255, 255, 255, 0.725);
+}
+.body--dark .border-text-secondary {
+  border-color: rgba(255, 255, 255, 0.725);
+}
+
+:root {
+  --q-text-light: #bfbfbf;
+}
+
+.body--dark .bg-text-light {
+  background: #bfbfbf;
+}
+.body--dark .text-text-light {
+  color: #bfbfbf;
+}
+.body--dark .fill-text-light {
+  fill: #bfbfbf;
+}
+.body--dark .stroke-text-light {
+  stroke: #bfbfbf;
+}
+.body--dark .border-text-light {
+  border-color: #bfbfbf;
+}
+
+:root {
+  --q-primary: #007aff;
+}
+
+.body--dark .bg-primary {
+  background: #007aff;
+}
+.body--dark .text-primary {
+  color: #007aff;
+}
+.body--dark .fill-primary {
+  fill: #007aff;
+}
+.body--dark .stroke-primary {
+  stroke: #007aff;
+}
+.body--dark .border-primary {
+  border-color: #007aff;
+}
+
+:root {
+  --q-primary-light: rgba(0, 123, 255, 0.15);
+}
+
+.body--dark .bg-primary-light {
+  background: rgba(0, 123, 255, 0.15);
+}
+.body--dark .text-primary-light {
+  color: rgba(0, 123, 255, 0.15);
+}
+.body--dark .fill-primary-light {
+  fill: rgba(0, 123, 255, 0.15);
+}
+.body--dark .stroke-primary-light {
+  stroke: rgba(0, 123, 255, 0.15);
+}
+.body--dark .border-primary-light {
+  border-color: rgba(0, 123, 255, 0.15);
+}
+
+:root {
+  --q-secondary: #26a69a;
+}
+
+.body--dark .bg-secondary {
+  background: #26a69a;
+}
+.body--dark .text-secondary {
+  color: #26a69a;
+}
+.body--dark .fill-secondary {
+  fill: #26a69a;
+}
+.body--dark .stroke-secondary {
+  stroke: #26a69a;
+}
+.body--dark .border-secondary {
+  border-color: #26a69a;
+}
+
+:root {
+  --q-btn-gradient: linear-gradient(to right, #007aff, #034da4);
+}
+
+.body--dark .bg-btn-gradient {
+  background: linear-gradient(to right, #007aff, #034da4);
+}
+.body--dark .text-btn-gradient {
+  color: linear-gradient(to right, #007aff, #034da4);
+}
+.body--dark .fill-btn-gradient {
+  fill: linear-gradient(to right, #007aff, #034da4);
+}
+.body--dark .stroke-btn-gradient {
+  stroke: linear-gradient(to right, #007aff, #034da4);
+}
+.body--dark .border-btn-gradient {
+  border-color: linear-gradient(to right, #007aff, #034da4);
+}
+
+:root {
+  --q-accent: #db162f;
+}
+
+.body--dark .bg-accent {
+  background: #db162f;
+}
+.body--dark .text-accent {
+  color: #db162f;
+}
+.body--dark .fill-accent {
+  fill: #db162f;
+}
+.body--dark .stroke-accent {
+  stroke: #db162f;
+}
+.body--dark .border-accent {
+  border-color: #db162f;
+}
+
+:root {
+  --q-accent-alternative: #db162f;
+}
+
+.body--dark .bg-accent-alternative {
+  background: #db162f;
+}
+.body--dark .text-accent-alternative {
+  color: #db162f;
+}
+.body--dark .fill-accent-alternative {
+  fill: #db162f;
+}
+.body--dark .stroke-accent-alternative {
+  stroke: #db162f;
+}
+.body--dark .border-accent-alternative {
+  border-color: #db162f;
+}
+
+:root {
+  --q-dark: #1d1d1d;
+}
+
+.body--dark .bg-dark {
+  background: #1d1d1d;
+}
+.body--dark .text-dark {
+  color: #1d1d1d;
+}
+.body--dark .fill-dark {
+  fill: #1d1d1d;
+}
+.body--dark .stroke-dark {
+  stroke: #1d1d1d;
+}
+.body--dark .border-dark {
+  border-color: #1d1d1d;
+}
+
+:root {
+  --q-positive: #21ba45;
+}
+
+.body--dark .bg-positive {
+  background: #21ba45;
+}
+.body--dark .text-positive {
+  color: #21ba45;
+}
+.body--dark .fill-positive {
+  fill: #21ba45;
+}
+.body--dark .stroke-positive {
+  stroke: #21ba45;
+}
+.body--dark .border-positive {
+  border-color: #21ba45;
+}
+
+:root {
+  --q-negative: #c10015;
+}
+
+.body--dark .bg-negative {
+  background: #c10015;
+}
+.body--dark .text-negative {
+  color: #c10015;
+}
+.body--dark .fill-negative {
+  fill: #c10015;
+}
+.body--dark .stroke-negative {
+  stroke: #c10015;
+}
+.body--dark .border-negative {
+  border-color: #c10015;
+}
+
+:root {
+  --q-info: #31ccec;
+}
+
+.body--dark .bg-info {
+  background: #31ccec;
+}
+.body--dark .text-info {
+  color: #31ccec;
+}
+.body--dark .fill-info {
+  fill: #31ccec;
+}
+.body--dark .stroke-info {
+  stroke: #31ccec;
+}
+.body--dark .border-info {
+  border-color: #31ccec;
+}
+
+:root {
+  --q-warning: #f2c037;
+}
+
+.body--dark .bg-warning {
+  background: #f2c037;
+}
+.body--dark .text-warning {
+  color: #f2c037;
+}
+.body--dark .fill-warning {
+  fill: #f2c037;
+}
+.body--dark .stroke-warning {
+  stroke: #f2c037;
+}
+.body--dark .border-warning {
+  border-color: #f2c037;
+}
+
+:root {
+  --q-background-light: #eaf4f4;
+}
+
+.body--dark .bg-background-light {
+  background: #eaf4f4;
+}
+.body--dark .text-background-light {
+  color: #eaf4f4;
+}
+.body--dark .fill-background-light {
+  fill: #eaf4f4;
+}
+.body--dark .stroke-background-light {
+  stroke: #eaf4f4;
+}
+.body--dark .border-background-light {
+  border-color: #eaf4f4;
+}
+
+:root {
+  --q-background-dark: #121212;
+}
+
+.body--dark .bg-background-dark {
+  background: #121212;
+}
+.body--dark .text-background-dark {
+  color: #121212;
+}
+.body--dark .fill-background-dark {
+  fill: #121212;
+}
+.body--dark .stroke-background-dark {
+  stroke: #121212;
+}
+.body--dark .border-background-dark {
+  border-color: #121212;
+}
+
+:root {
+  --q-background-primary: #1c1c1c;
+}
+
+.body--dark .bg-background-primary {
+  background: #1c1c1c;
+}
+.body--dark .text-background-primary {
+  color: #1c1c1c;
+}
+.body--dark .fill-background-primary {
+  fill: #1c1c1c;
+}
+.body--dark .stroke-background-primary {
+  stroke: #1c1c1c;
+}
+.body--dark .border-background-primary {
+  border-color: #1c1c1c;
+}
+
+:root {
+  --q-background-secondary: rgba(255, 255, 255, 0.03);
+}
+
+.body--dark .bg-background-secondary {
+  background: rgba(255, 255, 255, 0.03);
+}
+.body--dark .text-background-secondary {
+  color: rgba(255, 255, 255, 0.03);
+}
+.body--dark .fill-background-secondary {
+  fill: rgba(255, 255, 255, 0.03);
+}
+.body--dark .stroke-background-secondary {
+  stroke: rgba(255, 255, 255, 0.03);
+}
+.body--dark .border-background-secondary {
+  border-color: rgba(255, 255, 255, 0.03);
+}
+
+:root {
+  --q-overlay: rgba(56, 56, 56, 0.361);
+}
+
+.body--dark .bg-overlay {
+  background: rgba(56, 56, 56, 0.361);
+}
+.body--dark .text-overlay {
+  color: rgba(56, 56, 56, 0.361);
+}
+.body--dark .fill-overlay {
+  fill: rgba(56, 56, 56, 0.361);
+}
+.body--dark .stroke-overlay {
+  stroke: rgba(56, 56, 56, 0.361);
+}
+.body--dark .border-overlay {
+  border-color: rgba(56, 56, 56, 0.361);
+}
+
+:root {
+  --q-border-primary: #262626;
+}
+
+.body--dark .bg-border-primary {
+  background: #262626;
+}
+.body--dark .text-border-primary {
+  color: #262626;
+}
+.body--dark .fill-border-primary {
+  fill: #262626;
+}
+.body--dark .stroke-border-primary {
+  stroke: #262626;
+}
+.body--dark .border-border-primary {
+  border-color: #262626;
+}
+
+:root {
+  --q-border-secondary: rgba(0, 123, 255, 0.302);
+}
+
+.body--dark .bg-border-secondary {
+  background: rgba(0, 123, 255, 0.302);
+}
+.body--dark .text-border-secondary {
+  color: rgba(0, 123, 255, 0.302);
+}
+.body--dark .fill-border-secondary {
+  fill: rgba(0, 123, 255, 0.302);
+}
+.body--dark .stroke-border-secondary {
+  stroke: rgba(0, 123, 255, 0.302);
+}
+.body--dark .border-border-secondary {
+  border-color: rgba(0, 123, 255, 0.302);
+}
+
+:root {
+  --q-text-price: #05cd99;
+}
+
+.body--dark .bg-text-price {
+  background: #05cd99;
+}
+.body--dark .text-text-price {
+  color: #05cd99;
+}
+.body--dark .fill-text-price {
+  fill: #05cd99;
+}
+.body--dark .stroke-text-price {
+  stroke: #05cd99;
+}
+.body--dark .border-text-price {
+  border-color: #05cd99;
+}

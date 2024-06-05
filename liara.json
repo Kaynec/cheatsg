@@ -1,0 +1,5 @@
+{
+    "app":"frontend-cheatsgame",
+    "port":3000,
+    "platform":"node"
+}
