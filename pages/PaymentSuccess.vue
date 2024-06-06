@@ -107,8 +107,8 @@ const card = ref();
       <PrimaryButton
         class="max-w-120"
         @click="
-          $router.replace({
-            name: '',
+          navigateTo({
+            name: 'index',
           })
         "
       >

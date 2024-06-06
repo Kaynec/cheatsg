@@ -29,30 +29,32 @@ function submitForm() {
       :key="i.id"
       class="bg-background-primary pa-lg space-y-xl border-2px border-border-primary"
     >
-      <div class="flex flex-col gap-3 items-start">
-        <div class="flex items-center gap-2">
-          <span class="text-text-primary">
-            {{ i.sender.firstname + "" + i.sender.lastname }}
-          </span>
-        </div>
-        <div class="text-text-primary flex gap-2">
-          <QuestionMark class="fill-text-primary" /> سوال:
-        </div>
-      </div>
-      <p class="text-text-secondary">
-        {{ i.question }}
-      </p>
-      <!--  -->
-      <div>
-        <div
-          class="text-text-primary border-1px border-solid border-border-secondary rounded-2xl pa-sm"
-        >
-          <div class="text-primary mb-sm flex gap-2">
-            <Answer class="fill-primary" /> پاسخ::
+      <SchemaOrgQuestion :name="i.question" :answer="i.answer">
+        <div class="flex flex-col gap-3 items-start">
+          <div class="flex items-center gap-2">
+            <span class="text-text-primary">
+              {{ i.sender.firstname + " " + i.sender.lastname }}
+            </span>
           </div>
-          {{ i.answer }}
+          <div class="text-text-primary flex gap-2">
+            <QuestionMark class="fill-text-primary" /> سوال:
+          </div>
         </div>
-      </div>
+        <p class="text-text-secondary">
+          {{ i.question }}
+        </p>
+        <!--  -->
+        <div>
+          <div
+            class="text-text-primary border-1px border-solid border-border-secondary rounded-2xl pa-sm"
+          >
+            <div class="text-primary mb-sm flex gap-2">
+              <Answer class="fill-primary" /> پاسخ::
+            </div>
+            {{ i.answer }}
+          </div>
+        </div>
+      </SchemaOrgQuestion>
     </QCard>
   </div>
   <q-separator

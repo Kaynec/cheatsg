@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { apiProductProductDetailRetrieve } from "@/api";
+import type { Review } from "@/types";
 
 useSeoMeta({
   title: "Cheats  - package page",
@@ -29,6 +30,25 @@ globalStore.setCurrentTextName([
     to: "",
   },
 ]);
+
+// Defining Page Schema After The Blog Data is Fetched
+useSchemaOrg([
+  defineProduct({
+    name: data.value?.title,
+    image: data.value?.main_image,
+    offers: [{ price: data.value?.off_price }],
+    aggregateRating: {
+      ratingValue: data.value?.score,
+    },
+    review: data.value?.reviews.map((el: Review) => ({
+      name: el.comment,
+      author: {
+        name: el.user.firstname + " " + el.user.lastname,
+      },
+    })),
+  }),
+]);
+
 useSeoMeta({
   title: `Cheats - محصولات  - ${id}`,
   ogTitle: `Cheats - محصولات  - ${id}`,

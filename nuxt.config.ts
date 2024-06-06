@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: "https://cheatsg.ir",
-    name: "صفحه لندینگ چیتز گیم",
+    name: "چیتز گیم",
   },
 
   nitro: {
@@ -21,13 +21,6 @@ export default defineNuxtConfig({
     },
   },
 
-  schemaOrg: {
-    identity: {
-      type: "Organization",
-      name: "چیتز گیم",
-      url: "https:/cheatsg.ir",
-    },
-  },
   webVitals: {
     provider: "log",
     debug: true, // debug enable metrics reporting on dev environments
@@ -65,6 +58,12 @@ export default defineNuxtConfig({
     //   "/Profile/",
     // ],
     disallow: "/",
+  },
+
+  router: {
+    options: {
+      sensitive: true,
+    },
   },
 
   image: {

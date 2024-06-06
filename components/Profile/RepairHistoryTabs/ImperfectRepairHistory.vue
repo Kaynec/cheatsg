@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-4">
     <UserRepairHistoryCard
-      repairType="Ongoing"
+      repairType="Imperfect"
       :desc="i.explanation!"
       :deliveryType="i.delivery_data"
       :id="i.id.toString()"
@@ -13,7 +13,6 @@
       "
       :delivery_data="i.delivery_data"
       v-for="i in data"
-      :data="i"
     />
   </div>
 </template>

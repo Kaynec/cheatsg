@@ -58,17 +58,23 @@
         <div
           class="flex flex-row flex-nowrap whitespace-nowrap flex-1 pt-5 lg:p-0 lg:flex-col gap-2 md:gap-4 items-end my-auto"
         >
-          <template v-if="repairType === 'Saved'">
-            <button class="border-2 border-negative p-1 rounded">
-              <TrashCan class="stroke-negative w-6 h-6" />
-            </button>
-
-            <button class="inline-flex gap-2 text-primary">
-              <span>ثبت درخواست تعمیر</span>
+          <template v-if="repairType === 'Ongoing'">
+            <button
+              @click="
+                navigateTo({
+                  name: 'RepairDetail',
+                  query: {
+                    data: JSON.stringify(data),
+                  },
+                })
+              "
+              class="inline-flex gap-2 text-primary"
+            >
+              <span>مشاهده جزییات </span>
               <CurvedLeftArrow class="stroke-primary" />
             </button>
           </template>
-          <template v-else-if="repairType === 'Ongoing'">
+          <template v-else-if="repairType === 'Imperfect'">
             <button
               class="inline-flex gap-2 text-primary"
               @click="
@@ -103,10 +109,14 @@
 </template>
 
 <script setup lang="ts">
-import type { DeliveryDataOutPut } from "@/api";
+// navigateTo({
+//   name:"RepairDetail"
+// })
+
+import type { DeliveryDataOutPut, IssueReportDetailOutPut } from "@/api";
 import { formatPrice } from "@/api/basket-helper";
 
-type RepairType = "Saved" | "Cancelled" | "Repaired" | "Ongoing";
+type RepairType = "Imperfect" | "Cancelled" | "Repaired" | "Ongoing";
 
 const props = withDefaults(
   defineProps<{
@@ -122,6 +132,7 @@ const props = withDefaults(
     repairType?: RepairType;
     paid: boolean;
     delivery_data: DeliveryDataOutPut;
+    data?: IssueReportDetailOutPut;
   }>(),
   {
     paid: false,

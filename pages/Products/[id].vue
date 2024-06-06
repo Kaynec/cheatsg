@@ -40,9 +40,6 @@ useSchemaOrg([
       author: {
         name: el.user.firstname + " " + el.user.lastname,
       },
-      // reviewRating:{
-      //   ratingValue:el.comment.
-      // }
     })),
   }),
 ]);

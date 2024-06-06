@@ -21,6 +21,7 @@
       <OngoingRepairHistory :data="Ongoing" v-if="tab === 'Ongoing'" />
       <RepairedRepairHistory :data="Repaired" v-if="tab === 'Repaired'" />
       <CancelledRepairHistory :data="Cancelled" v-if="tab === 'Cancelled'" />
+      <ImperfectRepairHistory :data="Imperfect" v-if="tab === 'Imperfect'" />
     </div>
   </QCard>
 </template>
@@ -37,6 +38,7 @@ const icons = [
   { key: "Ongoing", name: "در جریان" },
   { key: "Repaired", name: "تعمیر شده" },
   { key: "Cancelled", name: "لغو شده" },
+  { key: "Imperfect", name: "کامل نشده" },
 ];
 
 import { ref } from "vue";
@@ -53,4 +55,6 @@ const Ongoing =
   history.value?.filter((issue) => issue.status === StatusEnum.NUMBER_1) ?? [];
 const Cancelled =
   history.value?.filter((issue) => issue.status === StatusEnum.NUMBER_3) ?? [];
+const Imperfect =
+  history.value?.filter((issue) => issue.status === StatusEnum.NUMBER_4) ?? [];
 </script>

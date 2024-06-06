@@ -29,6 +29,7 @@ const globalState = useGlobalStore();
 const currentPageMetaName = computed(() => globalState.currentSchema);
 </script>
 <template>
+  <NuxtLoadingIndicator />
   <div class="h-screen h-100svh !flex !flex-col">
     <LazyAppHeader :scrollAmount="scrollAmount" />
     <QScrollArea

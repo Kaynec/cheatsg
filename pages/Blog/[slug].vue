@@ -90,24 +90,21 @@
             :key="i.user.firstname + i.user.lastname"
             class="bg-background-primary pa-2xl space-y-xl border-2px border-border-primary"
           >
-            <div class="flex gap-3 items-start">
-              <div class="flex flex-col">
-                <span class="text-text-primary">
-                  {{ i.user.firstname + " " + i.user.lastname }}</span
-                >
+            <SchemaOrgComment :text="i.content">
+              <div class="flex gap-3 items-start">
+                <div class="flex flex-col">
+                  <span class="text-text-primary">
+                    {{ i.user.firstname + " " + i.user.lastname }}</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="flex items-end justify-between">
-              <p class="text-text-secondary">
-                {{ i.content }}
-              </p>
-              <!-- <QBtn flat aria-label="TrashCan Button">
-                <TrashCan
-                  @click="deleteComment((i as any).id)"
-                  class="fill-primary"
-                />
-              </QBtn> -->
-            </div>
+
+              <div class="flex items-end justify-between">
+                <p class="text-text-secondary">
+                  {{ i.content }}
+                </p>
+              </div>
+            </SchemaOrgComment>
           </QCard>
         </section>
         <q-separator
@@ -212,7 +209,7 @@ const {
   data: blogDetail,
   pending: loading,
   refresh,
-} = useAsyncData(`$blog-detail-${slug}`, async () => {
+} = await useAsyncData(`$blog-detail-${slug}`, async () => {
   const res = await apiGeneralBlogDetailRetrieve(slug);
   const data = { ...res };
   const html_res = await $fetch(res.content);

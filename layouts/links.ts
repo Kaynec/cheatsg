@@ -5,35 +5,35 @@ export const links = [
   },
   {
     name: "بازی ها",
-    route: "/Game",
+    route: "/game",
   },
   {
     name: "صفحه تعمیرات",
-    route: "/Repair/",
+    route: "/repair/",
   },
   {
     name: "درباره ما",
-    route: "/AboutUs",
+    route: "/aboutUs",
     query: {
       isSubSection: true,
     },
   },
   {
     name: "تماس با ما",
-    route: "/ContactUs",
+    route: "/contactUs",
   },
 ];
 export const ProductLinks = [
   {
     name: "محصولات فیزیکی",
-    route: "/Products",
+    route: "/products",
   },
   {
     name: "محصولات بازی ",
-    route: "/Products/Games",
+    route: "/products/games",
   },
   {
     name: "محصولات  گیفت کارت",
-    route: "/Products/GiftCard",
+    route: "/products/giftCard",
   },
 ];

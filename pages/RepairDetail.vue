@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Cheats  - payment success",
-  ogTitle: "Cheats  - payment success",
-  description: "خرید موفقیت آمیز",
-  ogDescription: "خرید موفقیت آمیز",
+  title: "Cheats  - ثبت نوبت موفقیت آمیز",
+  ogTitle: "Cheats  - ثبت نوبت موفقیت آمیز",
+  description: "ثبت نوبت موفقیت آمیز",
+  ogDescription: "ثبت نوبت موفقیت آمیز",
 });
 
 const router = useRouter();
@@ -13,7 +13,7 @@ const data = ref<Record<string, any>>();
 if (router.currentRoute.value.query?.data) {
   data.value = JSON.parse(router.currentRoute.value.query.data as string);
 } else {
-  router.push({
+  navigateTo({
     name: "index",
   });
 }
@@ -27,16 +27,18 @@ globalStore.setCurrentTextName([
   },
 ]);
 
+function returnLocateDate(date: string) {
+  return new Date(date).toLocaleDateString("fa-fa", {
+    hour: "2-digit",
+    minute: "2-digit",
+    weekday: "long",
+    day: "2-digit",
+    month: "long",
+  });
+}
+
 function splitDates(date: string) {
-  const splittedDates = date.split("---").map((el: string) =>
-    new Date(el).toLocaleDateString("fa-fa", {
-      hour: "2-digit",
-      minute: "2-digit",
-      weekday: "long",
-      day: "2-digit",
-      month: "long",
-    })
-  );
+  const splittedDates = date.split("---").map(returnLocateDate);
 
   return `از ${splittedDates.join(" تا ")}`;
 }
@@ -54,15 +56,24 @@ const details = ref([
     label: "نوع تحویل مرسوله:",
     text: "به صورت حضوری",
   },
-  {
-    label: "تاریخ تعیین شده برای تحویل مرسوله:",
-    text: splitDates(data.value!.delivery_data.schedule),
-  },
+
   {
     label: "آدرس:",
     text: data.value!.delivery_data.address,
   },
 ]);
+
+if (typeof data.value?.delivery_data.schedule === "string") {
+  details.value.push({
+    label: "تاریخ تعیین شده برای تحویل مرسوله:",
+    text: splitDates(data.value!.delivery_data.schedule),
+  });
+} else {
+  details.value.push({
+    label: "تاریخ تعیین شده برای تحویل مرسوله:",
+    text: `از ${returnLocateDate(data.value!.delivery_data.schedule.start)} تا ${returnLocateDate(data.value!.delivery_data.schedule.end)}`,
+  });
+}
 </script>
 
 <template>
