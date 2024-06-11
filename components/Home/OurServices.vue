@@ -62,9 +62,9 @@
               loading="lazy"
               alt="ps5 card image"
             />
-            <span class="text_xl text-text-primary font-600"
-              >خرید کنسول و لوازم جانبی</span
-            >
+            <h3 class="text_xl text-text-primary font-600">
+              خرید کنسول و لوازم جانبی
+            </h3>
           </div>
           <p class="text-text-secondary text-xs">
             و لوازم جانبی آن میتواند تجربه‌ای هیجان انگیز باشد. این کنسول نسل
@@ -93,9 +93,9 @@
               loading="lazy"
               alt="ps5 card image"
             />
-            <span class="text_xl text-text-primary font-600"
-              >تعمیرات و تست دسته</span
-            >
+            <h3 class="text_xl text-text-primary font-600">
+              تعمیرات و تست دسته
+            </h3>
           </div>
           <p class="text-text-secondary text-xs">
             و لوازم جانبی آن میتواند تجربه‌ای هیجان انگیز باشد. این کنسول نسل
@@ -125,7 +125,7 @@
               loading="lazy"
               alt="ps5 card image"
             />
-            <span class="text_xl text-text-primary font-600">نصب بازی</span>
+            <h3 class="text_xl text-text-primary font-600">نصب بازی</h3>
           </div>
           <p class="text-text-secondary text-xs">
             و لوازم جانبی آن میتواند تجربه‌ای هیجان انگیز باشد. این کنسول نسل

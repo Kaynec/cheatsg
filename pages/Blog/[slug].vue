@@ -69,6 +69,14 @@
                 new Date(blogDetail?.created_at!).toLocaleDateString("fa")
               }}
             </span>
+
+            <button
+              @click="shareBlog"
+              class="flex rounded-3xl gap-2 border-1px border-primary border-solid p-xs items-center"
+            >
+              <ShareIt class="fill-primary" />
+              اشتراک گذاری
+            </button>
           </div>
         </div>
       </div>
@@ -219,6 +227,61 @@ const {
   };
 });
 
+useHead({
+  title: blogDetail.value?.title || "",
+  meta: [
+    {
+      name: "description",
+      content: blogDetail.value?.content,
+    },
+    // Test on: https://developers.facebook.com/tools/debug/ or https://socialsharepreview.com/
+    { property: "og:site_name", content: "چیتز گیم" },
+    { hid: "og:type", property: "og:type", content: "website" },
+    {
+      property: "og:url",
+      content: `https://cheatsg.ir/blog/${slug}`,
+    },
+    {
+      property: "og:title",
+      content: blogDetail.value?.title,
+    },
+    {
+      property: "og:description",
+      content: blogDetail.value?.content,
+    },
+    {
+      property: "og:image",
+      content: blogDetail.value?.picture,
+    },
+    // Test on: https://cards-dev.twitter.com/validator or https://socialsharepreview.com/
+    { name: "twitter:site", content: "@qdnvubp" },
+    { name: "twitter:card", content: "summary_large_image" },
+    {
+      name: "twitter:url",
+
+      content: `https://cheatsg.ir/blog/${slug}`,
+    },
+    {
+      name: "twitter:title",
+      content: blogDetail.value?.title,
+    },
+    {
+      name: "twitter:description",
+      content: blogDetail.value?.content,
+    },
+    {
+      name: "twitter:image",
+      content: blogDetail.value?.picture,
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: `https://cheatsg.ir/blog/${slug}`,
+    },
+  ],
+});
+
 // Defining Page Schema After The Blog Data is Fetched
 useSchemaOrg([
   defineArticle({
@@ -292,6 +355,18 @@ async function deleteComment(id: number) {
   apiGeneralBlogCommentDetailDestroy(id)
     .then(() => refresh())
     .finally(() => $q.loading.hide());
+}
+
+function shareBlog() {
+  if (!("share" in window.navigator)) {
+    return;
+  }
+  window.navigator.share({
+    url: window.location.href,
+    text: blogDetail.value?.content,
+    title: blogDetail.value?.title,
+  });
+  console.log("share");
 }
 </script>
 <style scoped>
