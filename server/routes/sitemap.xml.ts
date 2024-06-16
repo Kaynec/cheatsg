@@ -10,8 +10,8 @@ const links: Partial<SitemapItem>[] = [
   { url: "/repair" },
   { url: "/repair/controllertest/" },
   { url: "/repair/console/" },
-  { url: "/repair/aboutus/" },
-  { url: "/repair/contactus/" },
+  { url: "/aboutus/" },
+  { url: "/contactus/" },
 ];
 
 async function recursiveFetch(fn: () => Promise<any>) {
